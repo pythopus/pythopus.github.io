@@ -1,79 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pytopus - Your API Orchestrator</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #011627;
-    color: #FDFFFC;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-image: url('img/banner.png');
-    background-size: cover;
-    padding: 10px;
-  }
-  header h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-  header p {
-    /* color: black; */
-    font-size: 1.5em;
-  }
-  .content {
-    padding: 10px;
-  }
-  .footer {
-    padding: 0px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #004d8d;
-  }
-  .logo {
-    width: 140px;
-    height: 140px;
-    /* display: flex; */
-    /* align-items:center; */
-    vertical-align: center;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pytopus - Your API Orchestrator</title>
+  <style>
+    html,
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #011627;
+      color: #FDFFFC;
+      box-sizing: border-box;
+      text-align: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      box-sizing: border-box;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-header,
+    .page-footer {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    .page-body {
+      flex-grow: 1;
+    }
+
+    header {
+      background-image: url('img/banner.png');
+      background-size: cover;
+      padding: 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.5em;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    .footer {
+      padding: 0px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #004d8d;
+      text-align: center;
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      vertical-align: center;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrapper">
 
-<header>
-  <div>
-    <a href="https://www.pytopus.com">
-      <img class="logo" src="img/pytopus-logo.png">
-    </a>
-    <h1>Pytopus</h1>
+    <header class="page-header">
+      <div>
+        <a href="https://www.pytopus.com">
+          <img class="logo" src="img/pytopus-logo.png">
+        </a>
+        <h1>Pytopus</h1>
+      </div>
+      <p>API Orchestrator</p>
+      <p>Unleashing the Power of API Integration with the Flexibility of Python</p>
+    </header>
+
+    <main class="page-body">
+      <p>
+      <h2>What is it?</h2>Pytopus is a sophisticated API Orchestrator designed to streamline the integration and
+      management of multiple API services. By enabling the creation of configurable chains, it seamlessly orchestrates
+      the flow of data between APIs, facilitating the efficient handling of inputs and outputs in a cascading manner.
+      This approach not only simplifies complex API interactions but also enhances the automation and scalability of
+      interconnected systems, making it an invaluable tool for developers looking to optimize their digital
+      infrastructure.</p>
+      <p>
+      <h2>Where is it?</h2>The project development is currently hosted on GitHub. You can find the source code,
+      documentation, and other resources at the following link: <a
+        href="https://github.com/pytopus/pytopus-engine">https://github.com/pytopus/pytopus-engine</a>.</p>
+      <p>
+      <h2>Why am I building this</h2>For years, I've been on the quest for a tool capable of seamlessly interconnecting
+      the output of one API to the input of another. Unfortunately, my search often ended in disappointment. The tools
+      and solutions I encountered were either overwhelmingly complex, cluttered with superfluous features, or
+      disappointingly simplistic, lacking essential functionalities. Driven by these frustrations, I embarked on a
+      journey to create my own solution. Thus, Pytopus was born—a name that marries 'Python' with 'Octopus', symbolizing
+      its ability to adeptly link APIs together through the power of the Python language, much like an octopus connects
+      its tentacles.</p>
+    </main>
+
+
+    <footer class="footer">
+      <p>&copy; 2024 Pytopus</p>
+    </footer>
+
+    <script>
+    </script>
   </div>
-  <p>API Orchestrator</p>
-  <p>Unleashing the Power of API Integration with the Flexibility of Python</p>
-</header>
-
-<div class="content">
-  
-  
-  <p><h2>What is it?</h2>Pytopus is a sophisticated API Orchestrator designed to streamline the integration and management of multiple API services. By enabling the creation of configurable chains, it seamlessly orchestrates the flow of data between APIs, facilitating the efficient handling of inputs and outputs in a cascading manner. This approach not only simplifies complex API interactions but also enhances the automation and scalability of interconnected systems, making it an invaluable tool for developers looking to optimize their digital infrastructure.</p>
-  <p><h2>Where is it?</h2>The project development is currently hosted on GitHub. You can find the source code, documentation, and other resources at the following link: <a href="https://github.com/pytopus/pytopus-engine">https://github.com/pytopus/pytopus-engine</a>.</p>
-  <p><h2>Why am I building this</h2>For years, I've been on the quest for a tool capable of seamlessly interconnecting the output of one API to the input of another. Unfortunately, my search often ended in disappointment. The tools and solutions I encountered were either overwhelmingly complex, cluttered with superfluous features, or disappointingly simplistic, lacking essential functionalities. Driven by these frustrations, I embarked on a journey to create my own solution. Thus, Pytopus was born—a name that marries 'Python' with 'Octopus', symbolizing its ability to adeptly link APIs together through the power of the Python language, much like an octopus connects its tentacles.</p>
-</div>
-
-<footer class="footer">
-  <p>&copy; 2024 Pytopus</p>
-  <!-- <a href="https://github.com/pytopus/pytopus-engine"><img src="https://img.shields.io/badge/-GitHub-100000?style=flat&logo=GitHub&logoColor=white" alt="GitHub link" /></a> -->
-</footer>
-
-<script>
-  // JavaScript code can go here
-</script>
-
 </body>
+
 </html>
